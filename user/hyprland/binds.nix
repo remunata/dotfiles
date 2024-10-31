@@ -18,5 +18,10 @@ in {
       "$mod, W, exec, firefox"
     ]
     ++ workspaces;
+
+    bindm = [
+      "$mod, mouse:272, movewindow"
+      "$mod, mouse:273, resizewindow"
+    ];
   };
 }
