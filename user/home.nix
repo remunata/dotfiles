@@ -5,6 +5,7 @@
     ./apps/kitty.nix
     ./ags.nix
     ./hyprland
+    ./theme.nix
   ];
 
   # Home Manager needs a bit of information about you and the paths it should
@@ -60,11 +61,6 @@
   #
   home.sessionVariables = {
     # EDITOR = "emacs";
-  };
-
-  gtk.iconTheme = {
-    package = pkgs.papirus-icon-theme;
-    name = "Papirus-Dark";
   };
 
   # Let Home Manager install and manage itself.
