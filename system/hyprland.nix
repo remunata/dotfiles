@@ -21,5 +21,26 @@
     kitty
     alacritty
     neovim
+    morewaita-icon-theme
+    adwaita-icon-theme
+    qogir-icon-theme
+    loupe
+    nautilus
+    baobab
+    gnome-text-editor
+    gnome-calendar
+    gnome-boxes
+    gnome-system-monitor
+    gnome-control-center
+    gnome-weather
+    gnome-calculator
+    gnome-clocks
+    gnome-software
+    wl-gammactl
+    wl-clipboard
+    wayshot
+    pavucontrol
+    brightnessctl
+    swww
   ];
 }
