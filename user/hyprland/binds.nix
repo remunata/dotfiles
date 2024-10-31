@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 let
   workspaces = builtins.concatLists (builtins.genList (i:
     let ws = i + 1;
@@ -6,6 +6,10 @@ let
       "$mod, code:1${toString i}, workspace, ${toString ws}"
       "$mod SHIFT, code:1${toString i}, movetoworkspace, ${toString ws}"
     ])9);
+
+  playerctl = "${pkgs.playerctl}/bin/playerctl";
+  brightnessctl = "${pkgs.brightnessctl}/bin/brightnessctl";
+  pactl = "${pkgs.pulseaudio}/bin/pactl";
 in {
   wayland.windowManager.hyprland.settings = {
     "$mod" = "SUPER";
@@ -22,6 +26,14 @@ in {
     bindm = [
       "$mod, mouse:272, movewindow"
       "$mod, mouse:273, resizewindow"
+    ];
+
+    bindl = [
+      ",XF86MonBrightnessUp,   exec, ${brightnessctl} set +5%"
+      ",XF86MonBrightnessDown, exec, ${brightnessctl} set  5%-"
+      ",XF86AudioRaiseVolume,  exec, ${pactl} set-sink-volume @DEFAULT_SINK@ +5%"
+      ",XF86AudioLowerVolume,  exec, ${pactl} set-sink-volume @DEFAULT_SINK@ -5%"
+      ",XF86AudioMicMute, exec, ${pactl} set-source-mute @DEFAULT_SOURCE@ toggle"
     ];
   };
 }
