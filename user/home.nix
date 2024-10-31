@@ -3,6 +3,7 @@
 {
   imports = [
     ./apps/kitty.nix
+    ./ags.nix
     ./hyprland
   ];
 

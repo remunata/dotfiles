@@ -18,7 +18,10 @@
     homeConfigurations = {
       remunata = home-manager.lib.homeManagerConfiguration {
 	inherit pkgs;
-	extraSpecialArgs = { inherit inputs; };
+	extraSpecialArgs = {
+	  inherit system;
+	  inherit inputs;
+	};
 	modules = [ ./user/home.nix ];
       };
     };
@@ -36,5 +39,8 @@
       url = "github:hyprwm/hyprland-plugins";
       inputs.hyprland.follows = "hyprland";
     };
+
+    ags.url = "github:Aylur/ags";
+    matugen.url = "github:InioX/matugen?ref=v2.2.0";
   };
 }
