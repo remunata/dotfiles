@@ -3,6 +3,7 @@
 {
   imports = [
     ./apps/kitty.nix
+    ./apps/git.nix
     ./ags.nix
     ./hyprland
     ./theme.nix
