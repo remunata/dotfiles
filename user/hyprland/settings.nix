@@ -1,16 +1,15 @@
 {
   wayland.windowManager.hyprland.settings = {
+    exec-once = [
+      "ags -b hypr"
+      "hyprctl setcursor Qogir 24"
+    ];
+
     monitor = [
       ",preferred,auto,1"
     ];
 
     general = {
-      gaps_in = 4;
-      gaps_out = 5;
-      gaps_workspaces = 50;
-      border_size = 1;
-      "col.active_border" = "rgba(0DB7D4FF)";
-      "col.inactive_border" = "rgba(31313600)";
       resize_on_border = true;
       layout = "dwindle";
     };
