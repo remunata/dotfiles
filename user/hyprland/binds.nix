@@ -21,6 +21,8 @@ in {
       "$mod, Return, exec, kitty"
       "$mod, W, exec, firefox"
       "$mod, E, exec, nautilus"
+
+      "$mod, Space, exec, wofi"
     ]
     ++ workspaces;
 

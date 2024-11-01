@@ -42,5 +42,6 @@
     pavucontrol
     brightnessctl
     swww
+    wofi
   ];
 }

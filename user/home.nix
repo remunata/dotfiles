@@ -4,6 +4,7 @@
   imports = [
     ./apps/kitty.nix
     ./apps/git.nix
+    ./apps/wofi.nix
     ./ags.nix
     ./hyprland
     ./theme.nix
@@ -26,7 +27,7 @@
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = with pkgs; [
-
+    vscodium
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
