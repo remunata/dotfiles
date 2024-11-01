@@ -4,6 +4,7 @@
   imports = [
     ./apps/kitty.nix
     ./apps/git.nix
+    ./apps/neovim.nix
     ./apps/wofi.nix
     ./ags.nix
     ./hyprland

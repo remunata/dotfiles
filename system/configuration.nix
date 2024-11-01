@@ -6,6 +6,7 @@
       ./hardware-configuration.nix
       ./nvidia.nix
       ./hyprland.nix
+      ./packages.nix
       ./system.nix
     ];
 

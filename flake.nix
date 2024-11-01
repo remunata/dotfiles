@@ -42,5 +42,10 @@
 
     ags.url = "github:Aylur/ags";
     matugen.url = "github:InioX/matugen?ref=v2.2.0";
+
+    nvchad4nix = {
+      url = "github:nix-community/nix4nvchad";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 }

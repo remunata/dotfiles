@@ -20,7 +20,6 @@
   environment.systemPackages = with pkgs; [
     kitty
     alacritty
-    neovim
     morewaita-icon-theme
     adwaita-icon-theme
     qogir-icon-theme
