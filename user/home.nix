@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, nixpkgs, ... }:
 
 {
   imports = [
@@ -29,7 +29,13 @@
   # environment.
   home.packages = with pkgs; [
     vscodium
+    jetbrains.pycharm-professional
   ];
+
+  nixpkgs.config.allowUnfreePredicate = pkg:
+    builtins.elem (pkgs.lib.getName pkg) [
+      "pycharm-professional"
+    ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
