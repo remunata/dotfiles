@@ -16,13 +16,15 @@ in {
 
     bind = [
       "$mod, Q, killactive,"
-      "$mod, F, fullscreen,"
+      "$mod, F, fullscreen, 0"
+      "$mod Shift, F, fullscreen, 1"
+      "$mod, Space, toggleFloating,"
 
       "$mod, Return, exec, kitty"
       "$mod, W, exec, firefox"
       "$mod, E, exec, nautilus"
 
-      "$mod, Space, exec, wofi"
+      "ALT, Space, exec, wofi"
     ]
     ++ workspaces;
 
