@@ -19,7 +19,7 @@
 
   environment.systemPackages = with pkgs; [
     kitty
-    alacritty
+    kitty-themes
     morewaita-icon-theme
     adwaita-icon-theme
     qogir-icon-theme
@@ -42,5 +42,9 @@
     brightnessctl
     swww
     wofi
+  ];
+
+  fonts.packages = with pkgs; [
+    nerdfonts
   ];
 }
