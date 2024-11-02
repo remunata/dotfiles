@@ -6,4 +6,9 @@
       nvchad = inputs.nvchad4nix.packages."${pkgs.system}".nvchad;
     })
   ];
+
+  # Development packages
+  environment.systemPackages = with pkgs; [
+    conda
+  ];
 }
