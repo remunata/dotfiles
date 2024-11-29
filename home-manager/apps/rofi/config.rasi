@@ -1,6 +1,6 @@
 configuration{
   font: "JetBrainsMono Nerd Font 14";
-  modes: "combi";
+  modes: "combi,window,drun";
   combi-modes: "window,drun";
   show-icons: true;
   terminal: "kitty";
