@@ -64,8 +64,8 @@ in {
     ];
 
     bindle = [
-      ",XF86MonBrightnessUp,   exec, ${brightnessctl} set +5%"
-      ",XF86MonBrightnessDown, exec, ${brightnessctl} set  5%-"
+      ",XF86MonBrightnessUp,   exec, ${brightnessctl} set +2%"
+      ",XF86MonBrightnessDown, exec, ${brightnessctl} set  2%-"
       ",XF86AudioRaiseVolume,  exec, ${volumectl} i"
       ",XF86AudioLowerVolume,  exec, ${volumectl} d"
     ];
@@ -76,6 +76,7 @@ in {
       ",XF86AudioPause,   exec, ${playerctl} pause"
       ",XF86AudioPrev,    exec, ${playerctl} previous"
       ",XF86AudioNext,    exec, ${playerctl} next"
+      ",XF86AudioMute, exec, ${volumectl} m"
     ];
 
     binde = [
