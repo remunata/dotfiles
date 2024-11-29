@@ -23,6 +23,7 @@ in {
       "$mod, E, exec, thunar"
 
       "ALT, Space, exec, rofi -show drun"
+      "Ctrl, Tab, exec, rofi -show window"
       "$mod, Backspace, exec, wlogout"
       "$mod Shift, S, exec, grimblast --notify --freeze copysave area"
       ", Print, exec, grimblast --notify copysave screen"
