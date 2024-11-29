@@ -1,9 +1,9 @@
 {
   programs.btop = {
     enable = true;
-    extraConfig = ''
+    settings = {
       color_theme = "horizon";
       theme_background = false;
-    '';
+    };
   };
 }
