@@ -7,11 +7,11 @@
     ./apps/dunst.nix
     ./apps/git.nix
     ./apps/hyprland
-    ./apps/kitty.nix
     ./apps/neovim
     ./apps/rofi
     ./apps/sh.nix
     ./apps/waybar.nix
+    ./apps/wezterm.nix
     ./apps/wlogout
     ./theme.nix
     ./wallpapers
@@ -37,6 +37,8 @@
     btop
     disfetch
   ];
+
+  programs.wezterm.enable = true;
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.

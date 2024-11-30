@@ -29,7 +29,6 @@
     neovim
     wget
     git
-    kitty
     pavucontrol
     pamixer
     qimgv
