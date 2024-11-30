@@ -10,6 +10,7 @@
         color_scheme = 'Catppuccin Macchiato',
         enable_tab_bar = false,
         window_background_opacity = 0.85,
+        default_cursor_style = 'BlinkingBar',
       }
     '';
   };
