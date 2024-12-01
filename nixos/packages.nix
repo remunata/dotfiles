@@ -35,6 +35,7 @@
     pamixer
     qimgv
     evince
+    mpv
     
     vscode
     discord
