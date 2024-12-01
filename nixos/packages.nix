@@ -29,6 +29,8 @@
     neovim
     wget
     git
+    zip
+    unzip
     pavucontrol
     pamixer
     qimgv
