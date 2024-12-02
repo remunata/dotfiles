@@ -29,10 +29,10 @@
     neovim
     wget
     git
-    zip
-    unzip
     pavucontrol
     pamixer
+
+    file-roller
     qimgv
     evince
     mpv
