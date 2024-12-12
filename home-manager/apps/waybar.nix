@@ -28,6 +28,16 @@ in {
         "clock"
       ];
 
+      "temperature" = {
+        "critical-threshold" = 90;
+        "thermal-zone" = 4;
+        "format-critical" = "{icon} {temperatureC}°C";
+        "format" = "{icon} {temperatureC}°C";
+        "format-icons" =  ["" "" ""];
+        "tooltip" = true;
+        "interval" = 1;
+      };
+
       "cpu" = {
         "interval" = 1;
         "format" = "󰍛 {usage}%";
