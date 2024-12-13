@@ -56,7 +56,9 @@
 
   # Font packages.
   fonts.packages = with pkgs; [
-    nerdfonts
     noto-fonts
+    nerd-fonts.jetbrains-mono
+    nerd-fonts.fira-mono
+    nerd-fonts.fira-code
   ];
 }
