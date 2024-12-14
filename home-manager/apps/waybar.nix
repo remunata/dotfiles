@@ -55,7 +55,7 @@ in {
         "format" = "{initialTitle}";
         "rewrite" = {
           "Mozilla Firefox" = "󰈹 Firefox";
-          "kitty" = " Term";
+          "wezterm" = " Term";
         };
       };
 
