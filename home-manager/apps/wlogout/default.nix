@@ -43,7 +43,7 @@ in {
     layout = [
       {
         "label" = "lock";
-        "action" = "pidof hyprlock || hyprlock";
+        "action" = "loginctl lock-session";
         "text" = "Lock";
         "keybind" = "l";
       }
