@@ -1,7 +1,7 @@
 { pkgs, lib, ... }:
 let
   wallpaper = builtins.path {
-    path = ./city.jpg;
+    path = ./frieren_fern.jpg;
   };
 in {
   home.packages = with pkgs; [
