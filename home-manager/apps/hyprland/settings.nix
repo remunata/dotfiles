@@ -22,6 +22,10 @@
       "col.inactive_border" = "rgba(595959aa)";
     };
 
+    misc = {
+      disable_hyprland_qtutils_check = true;
+    };
+
     dwindle = {
       preserve_split = true;
       pseudotile = true;

@@ -1,8 +1,7 @@
 { pkgs, ... }:
 let
-  image = builtins.fetchurl {
-      url = "https://images4.alphacoders.com/130/1301526.png";
-      sha256 = "0m2ilvs8rbyfw999lf7540cdx993mqq2rqw79z4dq22bfm0mnjfc";
+  image = builtins.path {
+    path = ../home-manager/wallpapers/sddm.png;
   };
 in
 pkgs.stdenv.mkDerivation {
