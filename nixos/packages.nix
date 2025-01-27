@@ -43,6 +43,8 @@
     gamemode
     steam
     heroic
+
+    zulu17
   ];
 
   # Starship prompt.
@@ -60,5 +62,7 @@
     nerd-fonts.jetbrains-mono
     nerd-fonts.fira-mono
     nerd-fonts.fira-code
+    corefonts
+    vistafonts
   ];
 }
