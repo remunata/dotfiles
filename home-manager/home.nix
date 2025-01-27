@@ -1,4 +1,4 @@
-{ config, pkgs, nixpkgs, ... }:
+{ config, pkgs, nixpkgs, lib, ... }:
 
 {
 
@@ -22,11 +22,13 @@
   home.username = "remunata";
   home.homeDirectory = "/home/remunata";
 
-  # The home.packages option allows you to install Nix packages into your
-  # environment.
+  # The home.packages.
+
   home.packages = with pkgs; [
     btop
     disfetch
+    libreoffice
+    zotero
   ];
 
   # Let Home Manager install and manage itself.
