@@ -18,6 +18,8 @@
       python311Packages.mypy
       python311Packages.ruff
       python311Packages.black
+      svelte-language-server
+      prettierd
     ];
   };
 }
