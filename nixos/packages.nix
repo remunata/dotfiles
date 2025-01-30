@@ -44,7 +44,7 @@
     steam
     heroic
 
-    zulu17
+    jdk
   ];
 
   # Starship prompt.
