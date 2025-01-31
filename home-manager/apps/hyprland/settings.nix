@@ -26,6 +26,10 @@
       disable_hyprland_qtutils_check = true;
     };
 
+    cursor = {
+      no_hardware_cursors = true;
+    };
+
     dwindle = {
       preserve_split = true;
       pseudotile = true;
