@@ -31,6 +31,7 @@
     git
     pavucontrol
     pamixer
+    wl-clipboard
 
     file-roller
     qimgv
