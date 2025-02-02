@@ -1,7 +1,6 @@
-{ config, pkgs, nixpkgs, lib, ... }:
+{ config, pkgs, nixpkgs, lib, zoompkgs, ... }:
 
 {
-
   imports = [
     ./apps/btop.nix
     ./apps/dunst.nix
@@ -23,12 +22,12 @@
   home.homeDirectory = "/home/remunata";
 
   # The home.packages.
-
   home.packages = with pkgs; [
     btop
     disfetch
     libreoffice
     zotero
+    zoompkgs.zoom-us
   ];
 
   # Let Home Manager install and manage itself.
