@@ -5,6 +5,12 @@
       "waybar"
       "hyprctl setcursor Bibata-Modern-Classic 20"
     ];
+
+    env = [
+      "XDG_CURRENT_DESKTOP,Hyprland"
+      "XDG_SESSION_TYPE,wayland"
+      "XDG_SESSION_DESKTOP,Hyprland"
+    ];
     
     monitor = [
       "eDP-1, 1920x1080@60, 0x0, 1"
