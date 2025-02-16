@@ -46,6 +46,7 @@
     heroic
 
     jdk
+    devenv
   ];
 
   # Starship prompt.
