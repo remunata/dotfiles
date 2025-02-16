@@ -15,9 +15,9 @@
       rust-analyzer
       vscode-langservers-extracted
       pyright
-      python311Packages.mypy
-      python311Packages.ruff
-      python311Packages.black
+      python3Packages.mypy
+      python3Packages.ruff
+      python3Packages.black
     ];
   };
 }
