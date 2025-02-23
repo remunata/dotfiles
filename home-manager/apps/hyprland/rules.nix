@@ -12,6 +12,7 @@
       "float, ^(qimgv)$"
       "center, ^(qimgv)$"
       "size >50%, ^(qimgv)"
+      "float, ^(org.gnome.FileRoller)$"
     ];
   };
 }
