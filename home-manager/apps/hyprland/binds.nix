@@ -25,7 +25,7 @@ in {
       "ALT, Space, exec, rofi -show drun"
       "Ctrl, Tab, exec, rofi -show window"
       "$mod, Backspace, exec, wlogout"
-      "$mod Shift, S, exec, grimblast --notify --freeze copysave area"
+      "$mod Shift, S, exec, grimblast --notify --freeze --wait 2 copysave area"
       ", Print, exec, grimblast --notify copysave screen"
 
       "$mod, Q, killactive,"
