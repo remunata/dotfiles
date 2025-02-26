@@ -44,6 +44,7 @@
     gamemode
     steam
     heroic
+    linuxPackages.xone
 
     jdk
     devenv
