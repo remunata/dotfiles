@@ -31,6 +31,7 @@
     git
     pavucontrol
     pamixer
+    sof-firmware
     wl-clipboard
 
     file-roller
