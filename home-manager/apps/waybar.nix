@@ -112,6 +112,7 @@ in {
       "battery" = {
         "format" = "{icon} {capacity}%";
         "format-plugged" = " {capacity}%";
+        "format-charging" = "󰂄 {capacity}%";
         "format-icons" = ["" "" "" "" ""];
         "interval" = 30;
         "states" = {
