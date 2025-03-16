@@ -1,12 +1,14 @@
-{ config, pkgs, nixpkgs, lib, zoompkgs, ... }:
-
 {
+  pkgs,
+  zoompkgs,
+  ...
+}: {
   imports = [
     ./apps/btop.nix
     ./apps/dunst.nix
     ./apps/git.nix
     ./apps/hyprland
-    ./apps/neovim
+    ./apps/neovim.nix
     ./apps/rofi
     ./apps/sh.nix
     ./apps/waybar.nix
@@ -18,17 +20,17 @@
 
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
-  home.username = "remunata";
-  home.homeDirectory = "/home/remunata";
-
-  # The home.packages.
-  home.packages = with pkgs; [
-    btop
-    disfetch
-    libreoffice
-    zotero
-    zoompkgs.zoom-us
-  ];
+  home = {
+    username = "remunata";
+    homeDirectory = "/home/remunata";
+    packages = with pkgs; [
+      btop
+      disfetch
+      libreoffice
+      zotero
+      zoompkgs.zoom-us
+    ];
+  };
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;

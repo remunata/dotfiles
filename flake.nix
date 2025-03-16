@@ -1,9 +1,13 @@
 {
-
   description = "My main flakes configuration";
 
-  outputs = inputs @ { self, nixpkgs, home-manager, nixpkgs-zoom, ... }:
-  let
+  outputs = inputs @ {
+    self,
+    nixpkgs,
+    home-manager,
+    nixpkgs-zoom,
+    ...
+  }: let
     system = "x86_64-linux";
     pkgs = nixpkgs.legacyPackages.${system};
     zoompkgs = import nixpkgs-zoom {
@@ -13,15 +17,15 @@
   in {
     nixosConfigurations = {
       nixos = nixpkgs.lib.nixosSystem {
-	      specialArgs = { inherit system inputs; };
-	      modules = [ ./nixos/configuration.nix ];
+        specialArgs = {inherit system inputs;};
+        modules = [./nixos/configuration.nix];
       };
     };
     homeConfigurations = {
       remunata = home-manager.lib.homeManagerConfiguration {
-	      inherit pkgs;
-	      extraSpecialArgs = { inherit system inputs zoompkgs; };
-	      modules = [ ./home-manager/home.nix ];
+        inherit pkgs;
+        extraSpecialArgs = {inherit system inputs zoompkgs;};
+        modules = [./home-manager/home.nix];
       };
     };
   };
@@ -44,12 +48,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    nvchad4nix = {
-      url = "github:nix-community/nix4nvchad";
+    nvf = {
+      url = "github:notashelf/nvf";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
     nixpkgs-zoom.url = "nixpkgs/63dacb46bf939521bdc93981b4cbb7ecb58427a0";
   };
-
 }
