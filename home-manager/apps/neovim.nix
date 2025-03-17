@@ -11,6 +11,33 @@
         tabstop = 2;
       };
 
+      keymaps = [
+        {
+          mode = "n";
+          key = "<leader>nt";
+          action = "<CMD>Neotree toggle<CR>";
+          desc = "Toggle NeoTree";
+        }
+        {
+          mode = "n";
+          key = "<leader>e";
+          action = "<CMD>Neotree focus<CR>";
+          desc = "Focus to NeoTree";
+        }
+        {
+          mode = "n";
+          key = "<leader>rp";
+          action = "<CMD>Precognition toggle<CR>";
+          desc = "Toggle precognition";
+        }
+        {
+          mode = "n";
+          key = "<leader>te";
+          action = "<CMD>ToggleTerm<CR>";
+          desc = "Toggle horizontal terminal";
+        }
+      ];
+
       theme = {
         enable = true;
         name = "catppuccin";
@@ -30,7 +57,6 @@
         trouble.enable = true;
         lspSignature.enable = true;
         otter-nvim.enable = true;
-        lsplines.enable = true;
         nvim-docs-view.enable = true;
       };
 
@@ -49,6 +75,20 @@
 
         nix.enable = true;
         markdown.enable = true;
+        bash.enable = true;
+
+        clang.enable = true;
+        css.enable = true;
+        html.enable = true;
+        lua.enable = true;
+        python.enable = true;
+        rust = {
+          enable = true;
+          crates.enable = true;
+        };
+        sql.enable = true;
+        ts.enable = true;
+        yaml.enable = true;
       };
 
       treesitter.context.enable = true;
