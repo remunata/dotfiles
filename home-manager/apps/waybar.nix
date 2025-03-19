@@ -1,132 +1,137 @@
-{ config, pkgs, ... }:
-let
+{
+  config,
+  pkgs,
+  ...
+}: let
   brightnessctl = "${pkgs.brightnessctl}/bin/brightnessctl";
 in {
   programs.waybar = {
     enable = true;
-    settings = [{
-      "layer" = "top";
-      "position" = "top";
-      "margin" = "5";
-      "spacing" = 14;
-      modules-left = [
-        "temperature"
-        "cpu"
-        "memory"
-        "hyprland/window"
-      ];
-      modules-center = [
-        "hyprland/workspaces"
-      ];
-      modules-right = [
-        "tray"
-        "idle_inhibitor"
-        "bluetooth"
-        "backlight"
-        "pulseaudio"
-        "battery"
-        "clock"
-      ];
+    settings = [
+      {
+        "layer" = "top";
+        "position" = "top";
+        "margin" = "5";
+        "spacing" = 14;
+        modules-left = [
+          "temperature"
+          "cpu"
+          "memory"
+          "hyprland/window"
+        ];
+        modules-center = [
+          "hyprland/workspaces"
+        ];
+        modules-right = [
+          "tray"
+          "idle_inhibitor"
+          "bluetooth"
+          "backlight"
+          "pulseaudio"
+          "battery"
+          "clock"
+        ];
 
-      "temperature" = {
-        "critical-threshold" = 90;
-        "thermal-zone" = 4;
-        "format-critical" = "{icon} {temperatureC}°C";
-        "format" = "{icon} {temperatureC}°C";
-        "format-icons" =  ["" "" ""];
-        "tooltip" = true;
-        "interval" = 1;
-      };
-
-      "cpu" = {
-        "interval" = 1;
-        "format" = "󰍛 {usage}%";
-      };
-
-      "memory" = {
-        "interval" = 1;
-        "format" = "󰻠 {percentage}%";
-        "states" = {
-          "warning" = 90;
+        "temperature" = {
+          "critical-threshold" = 90;
+          "thermal-zone" = 4;
+          "format-critical" = "{icon} {temperatureC}°C";
+          "format" = "{icon} {temperatureC}°C";
+          "format-icons" = ["" "" ""];
+          "tooltip" = true;
+          "interval" = 1;
         };
-      };
 
-      "hyprland/window" = {
-        "format" = "{initialTitle}";
-        "rewrite" = {
-          "Mozilla Firefox" = "󰈹 Firefox";
-          "wezterm" = " Term";
+        "cpu" = {
+          "interval" = 1;
+          "format" = "󰍛 {usage}%";
         };
-      };
 
-      "hyprland/workspaces" = {
-        "show-special" = true;
-        "persistent-workspaces" = {
-          "*" = [ 1 2 3 4 5 6 7 8 9 10 ];
+        "memory" = {
+          "interval" = 1;
+          "format" = "󰻠 {percentage}%";
+          "states" = {
+            "warning" = 90;
+          };
         };
-        "format" = "{icon}";
-        "format-icons" = {
+
+        "hyprland/window" = {
+          "format" = "{initialTitle}";
+          "rewrite" = {
+            "Mozilla Firefox" = "󰈹 Firefox";
+            "wezterm" = " Term";
+          };
+        };
+
+        "hyprland/workspaces" = {
+          "show-special" = true;
+          "persistent-workspaces" = {
+            "*" = [1 2 3 4 5 6 7 8 9 10];
+          };
+          "format" = "{icon}";
+          "format-icons" = {
             "active" = "";
             "empty" = "";
             "default" = "";
             "urgent" = "";
             "special" = "󰠱";
+          };
         };
-      };
 
-      "tray" = {
-        "spacing" = "10";
-      };
-
-      "idle_inhibitor" = {
-        "format" = "{icon}";
-        "format-icons" = {
-          "activated" = "󰛊";
-          "deactivated" = "󰾫";
+        "tray" = {
+          "spacing" = "10";
         };
-      };
 
-      "bluetooth" = {
-        "format-on" = "󰂯";
-        "format-off" = "󰂲";
-        "format-connected" = "󰂰 {device_alias}";
-      };
-
-      "backlight" = {
-        "interval" = 2;
-        "format" = "󰖨 {percent}%";
-        "on-scroll-up" = "${brightnessctl} set +5%";
-        "on-scroll-down" = "${brightnessctl} set 5%-";
-      };
-
-      "pulseaudio" = {
-        "format" = "{icon} {volume}%";
-        "format-muted" = "󰖁 Muted";
-        "format-icons" = {
-          "default" = [ "" "" "" ];
+        "idle_inhibitor" = {
+          "format" = "{icon}";
+          "format-icons" = {
+            "activated" = "󰛊";
+            "deactivated" = "󰾫";
+          };
         };
-        "on-click" = "pavucontrol";
-        "tooltip" = false;
-      };
 
-      "battery" = {
-        "format" = "{icon} {capacity}%";
-        "format-plugged" = " {capacity}%";
-        "format-charging" = "󰂄 {capacity}%";
-        "format-icons" = ["" "" "" "" ""];
-        "interval" = 30;
-        "states" = {
-          "warning" = 20;
-          "critical" = 10;
+        "bluetooth" = {
+          "format-on" = "󰂯";
+          "format-off" = "󰂲";
+          "format-connected" = "󰂰 {device_alias}";
         };
-        "tooltip" = false;
-      };
 
-      "clock" = {
-        "format-alt" = "{:%Y-%m-%d}";
-        "tooltip-format" = "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
-      };
-    }];
+        "backlight" = {
+          "interval" = 2;
+          "format" = "󰖨 {percent}%";
+          "on-scroll-up" = "${brightnessctl} set +5%";
+          "on-scroll-down" = "${brightnessctl} set 5%-";
+        };
+
+        "pulseaudio" = {
+          "format" = "{icon} {volume}%";
+          "format-muted" = "󰖁 Muted";
+          "format-icons" = {
+            "default" = ["" "" ""];
+          };
+          "on-click" = "pavucontrol";
+          "tooltip" = false;
+        };
+
+        "battery" = {
+          "format" = "{icon} {capacity}%";
+          "format-full" = " {capacity}%";
+          "format-charging" = "󰂄 {capacity}%";
+          "format-icons" = ["" "" "" "" ""];
+          "interval" = 30;
+          "states" = {
+            "warning" = 20;
+            "critical" = 10;
+          };
+          "tooltip" = false;
+        };
+
+        "clock" = {
+          "format-alt" = "{:%Y-%m-%d}";
+          "tooltip-format" = "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
+        };
+      }
+    ];
 
     style = ''
       window#waybar {
@@ -156,7 +161,7 @@ in {
       #battery {
         color: #a6da95;
       }
-      
+
       #backlight {
         color: #eed49f;
       }
@@ -165,7 +170,7 @@ in {
         color: #8aadf4;
         font-size: 1.3rem;
       }
-      
+
       #bluetooth.connected {
         font-size: 1.1rem;
       }
@@ -175,7 +180,7 @@ in {
         font-size: 1.3rem;
         padding-right: 4px;
       }
-      
+
       #window {
         font-weight: 500;
         margin-left: 12px;
