@@ -53,7 +53,9 @@
 
       lsp = {
         formatOnSave = true;
+        lspkind.enable = true;
         lightbulb.enable = true;
+        lspsaga.enable = true;
         trouble.enable = true;
         lspSignature.enable = true;
         otter-nvim.enable = true;
@@ -81,7 +83,10 @@
         css.enable = true;
         html.enable = true;
         lua.enable = true;
-        python.enable = true;
+        python = {
+          enable = true;
+          lsp.server = "pyright";
+        };
         rust = {
           enable = true;
           crates.enable = true;
