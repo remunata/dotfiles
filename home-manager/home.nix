@@ -2,13 +2,13 @@
   pkgs,
   zoompkgs,
   ...
-}: {
+}:
+{
   imports = [
     ./apps/btop.nix
     ./apps/dunst.nix
     ./apps/git.nix
     ./apps/hyprland
-    ./apps/neovim.nix
     ./apps/rofi
     ./apps/sh.nix
     ./apps/waybar.nix

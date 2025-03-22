@@ -6,7 +6,8 @@ let
   image = builtins.path {
     path = ../../wallpapers/mumei.png;
   };
-in {
+in
+{
   programs.hyprlock = {
     enable = true;
     settings = {
@@ -25,7 +26,7 @@ in {
         no_fade_in = false;
         disable_loading_bar = true;
       };
-      
+
       image = {
         path = "${image}";
         border_color = "0xffdddddd";

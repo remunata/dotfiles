@@ -1,34 +1,37 @@
 {
   description = "My main flakes configuration";
 
-  outputs = inputs @ {
-    self,
-    nixpkgs,
-    home-manager,
-    nixpkgs-zoom,
-    ...
-  }: let
-    system = "x86_64-linux";
-    pkgs = nixpkgs.legacyPackages.${system};
-    zoompkgs = import nixpkgs-zoom {
-      inherit system;
-      config.allowUnfree = true;
-    };
-  in {
-    nixosConfigurations = {
-      nixos = nixpkgs.lib.nixosSystem {
-        specialArgs = {inherit system inputs;};
-        modules = [./nixos/configuration.nix];
+  outputs =
+    inputs@{
+      self,
+      nixpkgs,
+      home-manager,
+      nixpkgs-zoom,
+      ...
+    }:
+    let
+      system = "x86_64-linux";
+      pkgs = nixpkgs.legacyPackages.${system};
+      zoompkgs = import nixpkgs-zoom {
+        inherit system;
+        config.allowUnfree = true;
+      };
+    in
+    {
+      nixosConfigurations = {
+        nixos = nixpkgs.lib.nixosSystem {
+          specialArgs = { inherit system inputs; };
+          modules = [ ./nixos/configuration.nix ];
+        };
+      };
+      homeConfigurations = {
+        remunata = home-manager.lib.homeManagerConfiguration {
+          inherit pkgs;
+          extraSpecialArgs = { inherit system inputs zoompkgs; };
+          modules = [ ./home-manager/home.nix ];
+        };
       };
     };
-    homeConfigurations = {
-      remunata = home-manager.lib.homeManagerConfiguration {
-        inherit pkgs;
-        extraSpecialArgs = {inherit system inputs zoompkgs;};
-        modules = [./home-manager/home.nix];
-      };
-    };
-  };
 
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
@@ -48,8 +51,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    nvf = {
-      url = "github:notashelf/nvf";
+    nvim = {
+      url = "github:remunata/nvim-config";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 

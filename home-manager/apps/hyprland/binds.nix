@@ -1,11 +1,17 @@
 { pkgs, ... }:
 let
-  workspaces = builtins.concatLists (builtins.genList (i:
-    let ws = i + 1;
-    in [
-      "$mod, code:1${toString i}, workspace, ${toString ws}"
-      "$mod SHIFT, code:1${toString i}, movetoworkspace, ${toString ws}"
-    ])9);
+  workspaces = builtins.concatLists (
+    builtins.genList (
+      i:
+      let
+        ws = i + 1;
+      in
+      [
+        "$mod, code:1${toString i}, workspace, ${toString ws}"
+        "$mod SHIFT, code:1${toString i}, movetoworkspace, ${toString ws}"
+      ]
+    ) 9
+  );
 
   playerctl = "${pkgs.playerctl}/bin/playerctl";
   brightnessctl = "${pkgs.brightnessctl}/bin/brightnessctl";
@@ -13,7 +19,8 @@ let
     path = ./scripts/volumecontrol.sh;
   };
 
-in {
+in
+{
   wayland.windowManager.hyprland.settings = {
     "$mod" = "SUPER";
 
@@ -56,8 +63,7 @@ in {
 
       "$mod, S, togglespecialworkspace,"
       "$mod ALT, S, movetoworkspacesilent, special"
-    ]
-    ++ workspaces;
+    ] ++ workspaces;
 
     bindm = [
       "$mod, mouse:272, movewindow"

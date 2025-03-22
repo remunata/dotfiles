@@ -13,7 +13,8 @@ let
     "gp" = "git push";
   };
 
-in {
+in
+{
   # Zsh configurations.
   programs.zsh = {
     enable = true;

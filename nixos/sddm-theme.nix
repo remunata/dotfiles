@@ -19,5 +19,5 @@ pkgs.stdenv.mkDerivation {
     rm Background.jpg
     cp -r ${image} $out/Background.jpg
     echo "ThemeColor=#303446" >> $out/theme.conf
-   '';
+  '';
 }

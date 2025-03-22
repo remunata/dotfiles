@@ -37,7 +37,8 @@ let
     path = ./icons/sleep-hover.png;
   };
 
-in {
+in
+{
   programs.wlogout = {
     enable = true;
     layout = [
@@ -89,7 +90,7 @@ in {
         46,
         0.5);
       }
-    
+
       button {
         background-repeat: no-repeat;
         background-position: center;
@@ -102,47 +103,47 @@ in {
         margin: 5px;
         transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
       }
-    
+
       button:hover {
         background-color: rgba(49,
         50,
         68,
         0.1);
       }
-    
+
       button:focus {
         background-color: #cba6f7;
         color: #1e1e2e;
       }
-    
+
       #lock {
         background-image: image(url("${lock}"));
       }
       #lock:focus {
         background-image: image(url("${lock-hover}"));
       }
-    
+
       #logout {
         background-image: image(url("${logout}"));
       }
       #logout:focus {
         background-image: image(url("${logout-hover}"));
       }
-    
+
       #suspend {
         background-image: image(url("${sleep}"));
       }
       #suspend:focus {
         background-image: image(url("${sleep-hover}"));
       }
-    
+
       #shutdown {
         background-image: image(url("${power}"));
       }
       #shutdown:focus {
         background-image: image(url("${power-hover}"));
       }
-    
+
       #reboot {
         background-image: image(url("${restart}"));
       }

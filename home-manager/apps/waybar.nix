@@ -2,9 +2,11 @@
   config,
   pkgs,
   ...
-}: let
+}:
+let
   brightnessctl = "${pkgs.brightnessctl}/bin/brightnessctl";
-in {
+in
+{
   programs.waybar = {
     enable = true;
     settings = [
@@ -37,7 +39,11 @@ in {
           "thermal-zone" = 4;
           "format-critical" = "{icon} {temperatureC}°C";
           "format" = "{icon} {temperatureC}°C";
-          "format-icons" = ["" "" ""];
+          "format-icons" = [
+            ""
+            ""
+            ""
+          ];
           "tooltip" = true;
           "interval" = 1;
         };
@@ -66,7 +72,18 @@ in {
         "hyprland/workspaces" = {
           "show-special" = true;
           "persistent-workspaces" = {
-            "*" = [1 2 3 4 5 6 7 8 9 10];
+            "*" = [
+              1
+              2
+              3
+              4
+              5
+              6
+              7
+              8
+              9
+              10
+            ];
           };
           "format" = "{icon}";
           "format-icons" = {
@@ -107,7 +124,11 @@ in {
           "format" = "{icon} {volume}%";
           "format-muted" = "󰖁 Muted";
           "format-icons" = {
-            "default" = ["" "" ""];
+            "default" = [
+              ""
+              ""
+              ""
+            ];
           };
           "on-click" = "pavucontrol";
           "tooltip" = false;
@@ -117,7 +138,13 @@ in {
           "format" = "{icon} {capacity}%";
           "format-full" = " {capacity}%";
           "format-charging" = "󰂄 {capacity}%";
-          "format-icons" = ["" "" "" "" ""];
+          "format-icons" = [
+            ""
+            ""
+            ""
+            ""
+            ""
+          ];
           "interval" = 30;
           "states" = {
             "warning" = 20;

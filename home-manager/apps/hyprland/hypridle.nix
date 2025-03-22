@@ -1,7 +1,8 @@
 { pkgs, ... }:
 let
   brightnessctl = "${pkgs.brightnessctl}/bin/brightnessctl";
-in {
+in
+{
   services.hypridle = {
     enable = true;
     settings = {

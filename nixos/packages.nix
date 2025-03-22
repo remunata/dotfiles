@@ -1,4 +1,9 @@
-{ pkgs, inputs, ... }:
+{
+  pkgs,
+  inputs,
+  system,
+  ...
+}:
 
 {
   # Nixpkgs configurations.
@@ -26,6 +31,7 @@
 
   # System packages.
   environment.systemPackages = with pkgs; [
+    inputs.nvim.packages.${system}.nvim
     wget
     git
     pavucontrol
@@ -37,7 +43,7 @@
     qimgv
     evince
     mpv
-    
+
     vscode
     discord
 

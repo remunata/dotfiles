@@ -13,7 +13,10 @@
   # Nix settings.
   nix = {
     settings = {
-      experimental-features = [ "nix-command" "flakes" ];
+      experimental-features = [
+        "nix-command"
+        "flakes"
+      ];
       substituters = [
         "https://cuda-maintainers.cachix.org"
         "https://wezterm.cachix.org"

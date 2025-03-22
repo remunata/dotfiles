@@ -2,7 +2,11 @@
   users.users.remunata = {
     isNormalUser = true;
     description = "remunata";
-    extraGroups = [ "networkmanager" "wheel" "input" ];
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+      "input"
+    ];
   };
 
   nix.extraOptions = ''

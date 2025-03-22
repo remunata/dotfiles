@@ -11,7 +11,7 @@
       "XDG_SESSION_TYPE,wayland"
       "XDG_SESSION_DESKTOP,Hyprland"
     ];
-    
+
     monitor = [
       "eDP-1, 1920x1080@60, 0x0, 1"
     ];
@@ -23,7 +23,7 @@
       gaps_in = 5;
       gaps_out = 5;
       border_size = 2;
-      
+
       "col.active_border" = "rgba(d627c8ff) rgba(0553fcff) 45deg";
       "col.inactive_border" = "rgba(595959aa)";
     };
