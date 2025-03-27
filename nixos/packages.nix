@@ -16,9 +16,6 @@
     ];
   };
 
-  # Firefox.
-  programs.firefox.enable = true;
-
   # Gaming.
   programs = {
     steam.enable = true;
@@ -32,6 +29,7 @@
   # System packages.
   environment.systemPackages = with pkgs; [
     inputs.nvim.packages.${system}.nvim
+    inputs.zen-browser.packages.${system}.twilight
     wget
     git
     pavucontrol

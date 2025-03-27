@@ -26,7 +26,7 @@ in
 
     bind = [
       "$mod, Return, exec, wezterm"
-      "$mod, W, exec, firefox"
+      "$mod, W, exec, zen"
       "$mod, E, exec, thunar"
 
       "ALT, Space, exec, rofi -show drun"

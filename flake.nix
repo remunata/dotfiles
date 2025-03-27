@@ -56,6 +56,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    zen-browser = {
+      url = "github:0xc000022070/zen-browser-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     nixpkgs-zoom.url = "nixpkgs/63dacb46bf939521bdc93981b4cbb7ecb58427a0";
   };
 }
