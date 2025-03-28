@@ -5,7 +5,7 @@
       "opacity 0.85 0.85,class:^(Thunar)$"
       "opacity 0.85 0.85,class:^(thunar)$"
       "opacity 0.95 0.95,class:^(Code)$"
-      "opacity 0.97 0.97,class:^(firefox)$"
+      "opacity 0.97 0.97,class:^(zen-twilight)$"
     ];
 
     windowrule = [
