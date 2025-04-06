@@ -29,6 +29,7 @@
       libreoffice
       zotero
       zoompkgs.zoom-us
+      qbittorrent
     ];
   };
 
