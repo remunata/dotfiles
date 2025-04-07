@@ -64,7 +64,7 @@ in
         "hyprland/window" = {
           "format" = "{initialTitle}";
           "rewrite" = {
-            "Mozilla Firefox" = "󰈹 Firefox";
+            "Zen Twilight" = " Browser";
             "wezterm" = " Term";
           };
         };
