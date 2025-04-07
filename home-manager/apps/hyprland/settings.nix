@@ -44,8 +44,8 @@
     };
 
     decoration = {
-      rounding = 8;
-      dim_special = 0.7;
+      rounding = 2;
+      dim_special = 0.5;
       blur = {
         enabled = true;
         special = true;

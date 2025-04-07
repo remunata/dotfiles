@@ -9,11 +9,11 @@
     ];
 
     windowrule = [
-      "float, ^(qimgv)$"
-      "center, ^(qimgv)$"
-      "size >50%, ^(qimgv)"
-      "float, ^(org.gnome.FileRoller)$"
-      "float, ^(File Operation Progress)$"
+      "float, class:qimgv"
+      "center, class:qimgv"
+      "size >50%, class:qimgv"
+      "float, class:org.gnome.FileRoller"
+      "float, title:(File Operation Progress)"
     ];
   };
 }
