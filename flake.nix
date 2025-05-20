@@ -6,7 +6,6 @@
       self,
       nixpkgs,
       home-manager,
-      nixpkgs-zoom,
       ...
     }:
     let
