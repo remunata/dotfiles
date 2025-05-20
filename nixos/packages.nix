@@ -9,11 +9,6 @@
   # Nixpkgs configurations.
   nixpkgs = {
     config.allowUnfree = true;
-    overlays = [
-      (final: prev: {
-        nvchad = inputs.nvchad4nix.packages."${pkgs.system}".nvchad;
-      })
-    ];
   };
 
   # Gaming.

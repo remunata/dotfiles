@@ -1,6 +1,5 @@
 {
   pkgs,
-  zoompkgs,
   ...
 }:
 {
@@ -28,7 +27,6 @@
       disfetch
       libreoffice
       zotero
-      zoompkgs.zoom-us
       qbittorrent
     ];
   };

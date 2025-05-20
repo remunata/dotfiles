@@ -12,10 +12,6 @@
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
-      zoompkgs = import nixpkgs-zoom {
-        inherit system;
-        config.allowUnfree = true;
-      };
     in
     {
       nixosConfigurations = {
@@ -27,7 +23,7 @@
       homeConfigurations = {
         remunata = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
-          extraSpecialArgs = { inherit system inputs zoompkgs; };
+          extraSpecialArgs = { inherit system inputs; };
           modules = [ ./home-manager/home.nix ];
         };
       };
@@ -60,7 +56,5 @@
       url = "github:0xc000022070/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    nixpkgs-zoom.url = "nixpkgs/63dacb46bf939521bdc93981b4cbb7ecb58427a0";
   };
 }
