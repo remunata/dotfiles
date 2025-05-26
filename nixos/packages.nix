@@ -47,6 +47,7 @@
 
     jdk
     devenv
+    keepassxc
   ];
 
   # Starship prompt.
