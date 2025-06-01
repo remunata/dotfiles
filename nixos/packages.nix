@@ -44,6 +44,7 @@
     steam
     heroic
     linuxPackages.xone
+    mangohud
 
     jdk
     devenv
