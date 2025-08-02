@@ -49,6 +49,7 @@
     jdk
     devenv
     keepassxc
+    rclone
   ];
 
   # Starship prompt.
