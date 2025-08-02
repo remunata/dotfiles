@@ -514,11 +514,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1748274371,
-        "narHash": "sha256-YeJQY+wgVUK8bCpL3Y4TzntasEn+OJBInYvWxqX34ww=",
+        "lastModified": 1754119793,
+        "narHash": "sha256-6CnaiHiqKkdouiEckrntLIxP1TyIxQkKCAat9M39Yms=",
         "owner": "remunata",
         "repo": "nvim-config",
-        "rev": "b33855e415e7fef1763e4c568293d116db8aba77",
+        "rev": "941b76a090e024b362b5f7393a558223b33182b9",
         "type": "github"
       },
       "original": {
