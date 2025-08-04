@@ -7,6 +7,7 @@ in
 {
   home.packages = with pkgs; [
     swaybg
+    mpvpaper # For video wallpaper, run with script and hyprland binding
   ];
 
   systemd.user.services.swaybg = {
