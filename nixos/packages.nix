@@ -50,6 +50,7 @@
     devenv
     keepassxc
     rclone
+    killall
   ];
 
   # Starship prompt.

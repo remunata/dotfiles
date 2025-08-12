@@ -1,10 +1,16 @@
+{ ... }:
+let
+  mpvpaper = builtins.path {
+    path = ./scripts/mpvpaper.sh;
+  };
+in
 {
   wayland.windowManager.hyprland.settings = {
     exec-once = [
       "lxqt-policykit-agent"
       "waybar"
       "hyprctl setcursor Bibata-Modern-Classic 20"
-      "mpvpaper -s -o \"no-audio loop hwdec=auto gpu-api=vulkan\" eDP-1 ~/Videos/wallpapers"
+      "${mpvpaper}"
     ];
 
     env = [
