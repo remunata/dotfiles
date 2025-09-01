@@ -1,11 +1,22 @@
 { inputs, pkgs, ... }:
 
 let
+  sddm-bg = pkgs.fetchurl {
+    url = "https://www.desktophut.com/files/oA5LA5QU3UCjLhA_arlecchino-the-knave-genshin-impact.3840x2160.mp4";
+    hash = "sha256-tYB8vlvG7qdcWCTfRV7rnhzTSngJElUieN8IOsYweBY=";
+  };
   sddm-theme = inputs.silentSDDM.packages.${pkgs.system}.default.override {
     theme = "rei";
+    extraBackgrounds = [ sddm-bg ];
     theme-overrides = {
       "LoginScreen.LoginArea.Avatar" = {
         shape = "circle";
+      };
+      LoginScreen = {
+        background = "${sddm-bg.name}";
+      };
+      LockScreen = {
+        background = "${sddm-bg.name}";
       };
     };
   };
