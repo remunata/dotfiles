@@ -4,7 +4,7 @@ let
     path = ../../wallpapers/frieren.jpg;
   };
   image = builtins.path {
-    path = ../../wallpapers/mumei.png;
+    path = ../../wallpapers/herta.jpg;
   };
 in
 {
