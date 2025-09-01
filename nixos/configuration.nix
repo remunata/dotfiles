@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ./boot-theme.nix
     ./hyprland.nix
     ./nvidia.nix
     ./packages.nix
