@@ -12,11 +12,11 @@ let
       "LoginScreen.LoginArea.Avatar" = {
         shape = "circle";
       };
-      LoginScreen = {
-        background = "${sddm-bg.name}";
-      };
       LockScreen = {
         background = "${sddm-bg.name}";
+      };
+      General = {
+        "animated-background-placeholder" = "";
       };
     };
   };
