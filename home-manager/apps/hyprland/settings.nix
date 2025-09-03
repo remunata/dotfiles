@@ -18,10 +18,6 @@
       ", preferred, auto, 1, mirror, eDP-1"
     ];
 
-    input = {
-      kb_options = "caps:swapescape";
-    };
-
     general = {
       resize_on_border = true;
       layout = "dwindle";
