@@ -21,26 +21,5 @@ in
         cp -r ./assets/themes/${grub-theme}/* $out/
       '';
     };
-
-    plymouth = {
-      enable = true;
-      theme = "${plymouth-theme}";
-      themePackages = with pkgs; [
-        (adi1090x-plymouth-themes.override {
-          selected_themes = [ "${plymouth-theme}" ];
-        })
-      ];
-    };
-
-    # Silent boot.
-    consoleLogLevel = 0;
-    initrd.verbose = false;
-    kernelParams = [
-      "quiet"
-      "splash"
-      "boot.shell_on_fail"
-      "udev.log_priority=3"
-      "rd.systemd.show_status=auto"
-    ];
   };
 }
