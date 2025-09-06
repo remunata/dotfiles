@@ -46,7 +46,6 @@
     linuxPackages.xone
     mangohud
 
-    jdk
     devenv
     keepassxc
     rclone
