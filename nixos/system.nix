@@ -57,4 +57,7 @@
     rtkit.enable = true;
     polkit.enable = true;
   };
+
+  # Blacklist sound module for dell laptop.
+  boot.blacklistedKernelModules = [ "snd_soc_avs" ];
 }
