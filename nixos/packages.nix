@@ -50,7 +50,14 @@
     keepassxc
     rclone
     killall
+
+    compose2nix
   ];
+
+  # Docker.
+  virtualisation.docker = {
+    enable = true;
+  };
 
   # Starship prompt.
   programs.starship = {
