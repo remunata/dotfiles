@@ -28,8 +28,6 @@
       libreoffice
       zotero
       qbittorrent
-      postman
-      obsidian
     ];
   };
 
