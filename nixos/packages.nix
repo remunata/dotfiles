@@ -31,27 +31,23 @@
     pamixer
     sof-firmware
     wl-clipboard
-
     file-roller
     qimgv
     evince
     mpv
-
     vscode
     discord
-
     gamemode
     steam
     heroic
     linuxPackages.xone
     mangohud
-
     devenv
     keepassxc
     rclone
     killall
-
     compose2nix
+    postman
   ];
 
   # Docker.
