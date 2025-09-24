@@ -48,6 +48,7 @@
     killall
     compose2nix
     postman
+    obsidian
   ];
 
   # Docker.
