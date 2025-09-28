@@ -10,6 +10,7 @@
     ./apps/hyprland
     ./apps/rofi
     ./apps/sh.nix
+    ./apps/spicetify.nix
     ./apps/uwsm
     ./apps/wlogout
     ./theme.nix
