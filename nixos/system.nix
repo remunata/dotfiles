@@ -1,5 +1,3 @@
-{ pkgs, ... }:
-
 {
   # Networking configuration.
   networking = {
@@ -46,11 +44,6 @@
     powerOnBoot = true;
   };
   services.blueman.enable = true;
-
-  # Enable zsh as default shell.
-  environment.shells = with pkgs; [ zsh ];
-  users.defaultUserShell = pkgs.zsh;
-  programs.zsh.enable = true;
 
   # Security.
   security = {

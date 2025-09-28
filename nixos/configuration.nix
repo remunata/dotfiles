@@ -1,14 +1,15 @@
-{ config, pkgs, ... }:
-
 {
   imports = [
+    ./apps/gaming.nix
+    ./apps/general.nix
+    ./apps/hyprland.nix
+    ./apps/sh.nix
+    ./apps/thunar.nix
     ./boot-theme.nix
-    ./hyprland.nix
     ./nvidia.nix
     ./packages.nix
-    ./system.nix
     ./sddm.nix
-    ./thunar.nix
+    ./system.nix
     ./user.nix
     ./hardware-configuration.nix
   ];

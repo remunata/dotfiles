@@ -1,0 +1,20 @@
+{
+  inputs,
+  pkgs,
+  system,
+  ...
+}:
+{
+  environment.systemPackages = with pkgs; [
+    inputs.nvim.packages.${system}.nvim
+    inputs.zen-browser.packages.${system}.twilight
+    qimgv
+    evince
+    mpv
+    vscode
+    discord
+    keepassxc
+    postman
+    obsidian
+  ];
+}

@@ -1,9 +1,4 @@
-{
-  pkgs,
-  inputs,
-  system,
-  ...
-}:
+{ pkgs, ... }:
 
 {
   # Nixpkgs configurations.
@@ -11,58 +6,30 @@
     config.allowUnfree = true;
   };
 
-  # Gaming.
-  programs = {
-    steam.enable = true;
-    gamemode.enable = true;
-  };
-
   # Network tray.
   programs.nm-applet.enable = true;
   programs.nm-applet.indicator = true;
 
-  # System packages.
+  # System utilites.
   environment.systemPackages = with pkgs; [
-    inputs.nvim.packages.${system}.nvim
-    inputs.zen-browser.packages.${system}.twilight
     wget
     git
+    killall
+    wl-clipboard
+
     pavucontrol
     pamixer
-    sof-firmware
-    wl-clipboard
+
     file-roller
-    qimgv
-    evince
-    mpv
-    vscode
-    discord
-    gamemode
-    steam
-    heroic
-    linuxPackages.xone
-    mangohud
+    sof-firmware
+
     devenv
-    keepassxc
-    rclone
-    killall
     compose2nix
-    postman
-    obsidian
   ];
 
   # Docker.
   virtualisation.docker = {
     enable = true;
-  };
-
-  # Starship prompt.
-  programs.starship = {
-    enable = true;
-    package = pkgs.starship;
-    presets = [
-      "nerd-font-symbols"
-    ];
   };
 
   # Font packages.
