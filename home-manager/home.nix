@@ -10,6 +10,7 @@
     ./apps/hyprland
     ./apps/rofi
     ./apps/sh.nix
+    ./apps/uwsm
     ./apps/waybar.nix
     ./apps/wezterm.nix
     ./apps/wlogout
