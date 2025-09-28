@@ -6,17 +6,14 @@
   imports = [
     ./apps/btop.nix
     ./apps/caelestia.nix
-    ./apps/dunst.nix
     ./apps/git.nix
     ./apps/hyprland
     ./apps/rofi
     ./apps/sh.nix
     ./apps/uwsm
-    ./apps/waybar.nix
     ./apps/wezterm.nix
     ./apps/wlogout
     ./theme.nix
-    ./wallpapers
   ];
 
   # Home Manager needs a bit of information about you and the paths it should
