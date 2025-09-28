@@ -11,7 +11,6 @@
     trash-cli
     foot
     fish
-    fastfetch
     jq
     eza
     adw-gtk3
