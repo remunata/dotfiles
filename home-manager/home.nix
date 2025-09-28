@@ -4,7 +4,7 @@
 }:
 {
   imports = [
-    ./apps/btop.nix
+    ./apps/btop
     ./apps/caelestia.nix
     ./apps/git.nix
     ./apps/hyprland
