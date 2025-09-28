@@ -10,7 +10,6 @@
     ./apps/hyprland
     ./apps/rofi
     ./apps/sh.nix
-    ./apps/starship
     ./apps/uwsm
     ./apps/wlogout
     ./theme.nix
