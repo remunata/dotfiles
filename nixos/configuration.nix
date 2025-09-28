@@ -7,7 +7,7 @@
     ./nvidia.nix
     ./packages.nix
     ./system.nix
-    ./sddm-avatar.nix
+    ./sddm.nix
     ./user.nix
     ./hardware-configuration.nix
   ];
