@@ -23,10 +23,7 @@
         remunata = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
           extraSpecialArgs = { inherit system inputs; };
-          modules = [
-            ./home-manager/home.nix
-            inputs.caelestia-shell.homeManagerModules.default
-          ];
+          modules = [ ./home-manager/home.nix ];
         };
       };
     };
