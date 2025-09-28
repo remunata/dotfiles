@@ -23,7 +23,10 @@
         remunata = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
           extraSpecialArgs = { inherit system inputs; };
-          modules = [ ./home-manager/home.nix ];
+          modules = [
+            ./home-manager/home.nix
+            inputs.caelestia-shell.homeManagerModules.default
+          ];
         };
       };
     };
@@ -58,6 +61,11 @@
 
     silentSDDM = {
       url = "github:uiriansan/SilentSDDM";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    caelestia-shell = {
+      url = "github:caelestia-dots/shell";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };

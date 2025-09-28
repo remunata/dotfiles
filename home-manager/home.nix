@@ -5,6 +5,7 @@
 {
   imports = [
     ./apps/btop.nix
+    ./apps/caelestia.nix
     ./apps/dunst.nix
     ./apps/git.nix
     ./apps/hyprland
