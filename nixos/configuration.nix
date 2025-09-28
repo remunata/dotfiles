@@ -8,6 +8,7 @@
     ./packages.nix
     ./system.nix
     ./sddm.nix
+    ./thunar.nix
     ./user.nix
     ./hardware-configuration.nix
   ];
