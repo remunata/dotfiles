@@ -12,5 +12,19 @@
   };
 
   # GTK theme.
-  gtk.enable = true;
+  gtk = {
+    enable = true;
+    iconTheme = {
+      name = "Papirus-Dark";
+      package = pkgs.catppuccin-papirus-folders.override {
+        flavor = "macchiato";
+        accent = "maroon";
+      };
+    };
+    cursorTheme = {
+      name = "Bibata-Modern-Classic";
+      package = pkgs.bibata-cursors;
+      size = 20;
+    };
+  };
 }
