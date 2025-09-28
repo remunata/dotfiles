@@ -1,7 +1,6 @@
 {
   inputs,
   lib,
-  pkgs,
   system,
   ...
 }:
@@ -19,6 +18,7 @@ in
       adblockify
       hidePodcasts
       shuffle
+      beautifulLyrics
     ];
     theme = spicePkgs.themes.orchis;
   };
