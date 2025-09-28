@@ -6,10 +6,6 @@
     config.allowUnfree = true;
   };
 
-  # Network tray.
-  programs.nm-applet.enable = true;
-  programs.nm-applet.indicator = true;
-
   # System utilites.
   environment.systemPackages = with pkgs; [
     wget
