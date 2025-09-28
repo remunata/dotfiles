@@ -44,11 +44,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    wezterm = {
-      url = "github:wez/wezterm?dir=nix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     nvim = {
       url = "github:remunata/nvim-config";
       inputs.nixpkgs.follows = "nixpkgs";
