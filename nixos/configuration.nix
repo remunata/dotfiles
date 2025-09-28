@@ -1,5 +1,6 @@
 {
   imports = [
+    ./apps/caelestia.nix
     ./apps/gaming.nix
     ./apps/general.nix
     ./apps/hyprland.nix
