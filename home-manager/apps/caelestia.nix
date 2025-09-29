@@ -16,6 +16,21 @@ in
     };
     settings = {
       paths.wallpaperDir = wallpapers;
+      services = {
+        audioIncrement = 0.05;
+        useFahrenheit = false;
+      };
+      session = {
+        commands.logout = [
+          "hyprctl"
+          "dispatch"
+          "exit"
+          "0"
+        ];
+      };
+      notifs = {
+        actionOnClick = true;
+      };
     };
     cli = {
       enable = true;
