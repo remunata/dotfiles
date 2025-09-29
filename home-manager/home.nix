@@ -25,6 +25,7 @@
       libreoffice
       zotero
       qbittorrent
+      prismlauncher
     ];
   };
 
