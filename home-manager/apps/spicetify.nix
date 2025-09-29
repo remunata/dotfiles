@@ -12,6 +12,13 @@ in
     inputs.spicetify-nix.homeManagerModules.default
   ];
 
+  # Allow unfree spotify package.
+  nixpkgs.config.allowUnfreePredicate =
+    pkg:
+    builtins.elem (lib.getName pkg) [
+      "spotify"
+    ];
+
   programs.spicetify = {
     enable = true;
     enabledExtensions = with spicePkgs.extensions; [
@@ -20,13 +27,10 @@ in
       shuffle
       beautifulLyrics
     ];
-    theme = spicePkgs.themes.orchis;
-  };
-
-  # Allow unfree spotify package.
-  nixpkgs.config.allowUnfreePredicate =
-    pkg:
-    builtins.elem (lib.getName pkg) [
-      "spotify"
+    theme = spicePkgs.themes.starryNight;
+    enabledCustomApps = with spicePkgs.apps; [
+      marketplace
+      reddit
     ];
+  };
 }
