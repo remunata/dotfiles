@@ -37,4 +37,7 @@
     corefonts
     vistafonts
   ];
+
+  # Enable flatpak.
+  services.flatpak.enable = true;
 }
