@@ -18,4 +18,6 @@
     libsForQt5.qt5ct
     kdePackages.qt6ct
   ];
+
+  programs.gpu-screen-recorder.enable = true;
 }
