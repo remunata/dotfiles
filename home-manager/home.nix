@@ -4,17 +4,15 @@
 }:
 {
   imports = [
-    ./apps/btop.nix
-    ./apps/dunst.nix
+    ./apps/btop
+    ./apps/caelestia.nix
     ./apps/git.nix
     ./apps/hyprland
-    ./apps/rofi
     ./apps/sh.nix
-    ./apps/waybar.nix
-    ./apps/wezterm.nix
-    ./apps/wlogout
+    ./apps/spicetify.nix
+    ./apps/uwsm
+    ./apps/vscodium.nix
     ./theme.nix
-    ./wallpapers
   ];
 
   # Home Manager needs a bit of information about you and the paths it should
@@ -28,6 +26,7 @@
       libreoffice
       zotero
       qbittorrent
+      prismlauncher
     ];
   };
 

@@ -1,13 +1,16 @@
-{ config, pkgs, ... }:
-
 {
   imports = [
+    ./apps/caelestia.nix
+    ./apps/gaming.nix
+    ./apps/general.nix
+    ./apps/hyprland.nix
+    ./apps/sh.nix
+    ./apps/thunar.nix
     ./boot-theme.nix
-    ./hyprland.nix
     ./nvidia.nix
     ./packages.nix
+    ./sddm.nix
     ./system.nix
-    ./sddm-avatar.nix
     ./user.nix
     ./hardware-configuration.nix
   ];
