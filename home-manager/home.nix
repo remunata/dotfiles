@@ -11,6 +11,7 @@
     ./apps/sh.nix
     ./apps/spicetify.nix
     ./apps/uwsm
+    ./apps/vscodium.nix
     ./theme.nix
   ];
 
