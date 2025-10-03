@@ -6,6 +6,7 @@
   imports = [
     ./apps/btop
     ./apps/caelestia.nix
+    ./apps/foot.nix
     ./apps/git.nix
     ./apps/hyprland
     ./apps/sh.nix
