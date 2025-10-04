@@ -42,7 +42,7 @@
     };
 
     nvim = {
-      url = "github:remunata/nvim-config";
+      url = "github:remunata/nixvim-config";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
