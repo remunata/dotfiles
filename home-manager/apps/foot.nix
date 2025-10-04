@@ -13,6 +13,7 @@
         gamma-correct-blending = "no";
       };
 
+      colors.alpha = 0.78;
       scrollback.lines = 10000;
 
       cursor = {
