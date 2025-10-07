@@ -34,6 +34,24 @@ in
     };
     cli = {
       enable = true;
+      settings = {
+        theme = {
+          enableTerm = true;
+          enableHypr = true;
+          enableDiscord = true;
+          enableBtop = true;
+          enableGtk = true;
+          enableQt = true;
+        };
+        toggles = {
+          music = {
+            spotify = {
+              enable = true;
+              command = [ "spotify" ];
+            };
+          };
+        };
+      };
     };
   };
 }
