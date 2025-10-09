@@ -1,14 +1,28 @@
-{ pkgs, ... }:
+{ lib, pkgs, ... }:
 
 {
   home.packages = with pkgs; [
     papirus-folders
+    (catppuccin-kvantum.override {
+      accent = "blue";
+      variant = "mocha";
+    })
   ];
 
   # Qt theme.
   qt = {
     enable = true;
     platformTheme.name = "qtct";
+    style.name = "kvantum";
+  };
+
+  xdg.configFile = {
+    kvantum = {
+      target = "Kvantum/kvantum.kvconfig";
+      text = lib.generators.toINI { } {
+        General.theme = "catppuccin-mocha-blue";
+      };
+    };
   };
 
   # GTK theme.
