@@ -15,7 +15,7 @@
 
   # Dependencies.
   environment.systemPackages = with pkgs; [
-    lxqt.lxqt-policykit
+    hyprpolkitagent
     libsForQt5.qt5.qtgraphicaleffects
   ];
 }
