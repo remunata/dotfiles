@@ -1,10 +1,19 @@
-{ pkgs, ... }:
+{ lib, pkgs, ... }:
 
 {
-  # Nixpkgs configurations.
-  nixpkgs = {
-    config.allowUnfree = true;
-  };
+  nixpkgs.config.allowUnfreePredicate =
+    pkg:
+    builtins.elem (lib.getName pkg) [
+      "nvidia-x11"
+      "nvidia-settings"
+      "discord"
+      "postman"
+      "obsidian"
+      "steam"
+      "steam-unwrapped"
+      "corefonts"
+      "vista-fonts"
+    ];
 
   # System utilites.
   environment.systemPackages = with pkgs; [
