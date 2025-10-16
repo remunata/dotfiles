@@ -10,7 +10,6 @@
     qimgv
     evince
     mpv
-    vscode
     discord
     keepassxc
     postman
