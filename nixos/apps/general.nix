@@ -14,5 +14,6 @@
     keepassxc
     postman
     obsidian
+    chromium
   ];
 }
