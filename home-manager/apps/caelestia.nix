@@ -22,10 +22,8 @@ in
       };
       session = {
         commands.logout = [
-          "hyprctl"
-          "dispatch"
-          "exit"
-          "0"
+          "uwsm"
+          "stop"
         ];
       };
       notifs = {
