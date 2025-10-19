@@ -14,6 +14,7 @@
     ./apps/uwsm
     ./apps/vscodium.nix
     ./apps/wezterm.nix
+    ./apps/xdm
     ./apps/zen.nix
     ./theme.nix
   ];
