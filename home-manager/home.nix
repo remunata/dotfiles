@@ -9,6 +9,7 @@
     ./apps/foot.nix
     ./apps/git.nix
     ./apps/hyprland
+    ./apps/starship
     ./apps/sh.nix
     ./apps/spicetify.nix
     ./apps/uwsm
