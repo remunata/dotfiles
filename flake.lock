@@ -608,11 +608,11 @@
         "utils": "utils"
       },
       "locked": {
-        "lastModified": 1759926547,
-        "narHash": "sha256-FBsTmjqE2Qnp9bFm0yWeUUG+EYyxDrvjaxZ4r715CpI=",
+        "lastModified": 1764129632,
+        "narHash": "sha256-ylL0hVtDLPZ52WlBbnbL/AyyILr95c7TINGCD61TpAE=",
         "owner": "remunata",
         "repo": "nixvim-config",
-        "rev": "2a211fc9f0e3d651bd6d5bf0b54660cf369967d1",
+        "rev": "6b3102f3ba9b54a1c790210d717c212b91ff69fb",
         "type": "github"
       },
       "original": {
