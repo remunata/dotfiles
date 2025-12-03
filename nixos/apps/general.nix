@@ -14,6 +14,6 @@
     keepassxc
     postman
     obsidian
-    chromium
+    vivaldi
   ];
 }

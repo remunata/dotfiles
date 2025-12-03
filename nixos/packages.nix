@@ -13,6 +13,7 @@
       "steam-unwrapped"
       "corefonts"
       "vista-fonts"
+      "vivaldi"
     ];
 
   # System utilites.
