@@ -15,7 +15,6 @@
     ./apps/uwsm
     ./apps/vscodium.nix
     ./apps/wezterm.nix
-    ./apps/xdm
     ./apps/zen.nix
     ./theme.nix
   ];
@@ -32,6 +31,7 @@
       zotero
       qbittorrent
       prismlauncher
+      (callPackage ./apps/ab-download-manager { })
     ];
   };
 
