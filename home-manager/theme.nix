@@ -32,7 +32,7 @@
       name = "Papirus-Dark";
       package = pkgs.catppuccin-papirus-folders.override {
         flavor = "macchiato";
-        accent = "maroon";
+        accent = "green";
       };
     };
     cursorTheme = {
