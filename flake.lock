@@ -535,11 +535,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1766300958,
-        "narHash": "sha256-uH8LRZYxS3i1HvuNw3h/yJ47MZ3oycG+PWG4nb63QTE=",
+        "lastModified": 1766302061,
+        "narHash": "sha256-xWXZ7gA3quIQLwSfRd2e3gsp1W2v9lqOVWNwN0sgnPI=",
         "owner": "remunata",
         "repo": "remvim",
-        "rev": "ad45e9a7afa8adfd1626897bfe216eec6301c50a",
+        "rev": "9f4559fda4770a05f53ede17e853649f56a25101",
         "type": "github"
       },
       "original": {
