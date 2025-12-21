@@ -7,6 +7,7 @@
 {
   environment.systemPackages = with pkgs; [
     inputs.remvim.packages.${system}.remvim
+    inputs.nvim.packages.${system}.default
     qimgv
     evince
     mpv
