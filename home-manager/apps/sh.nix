@@ -3,8 +3,6 @@ let
   aliases = {
     "l" = "ls -l";
     "ll" = "ls -la";
-    "vim" = "nvim";
-    "vi" = "nvim";
     "q" = "exit";
     "c" = "clear";
     "gst" = "git status";
