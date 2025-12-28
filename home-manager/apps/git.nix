@@ -1,10 +1,10 @@
 {
   programs.git = {
     enable = true;
-    userEmail = "remdinata@gmail.com";
-    userName = "Mahendra Dinata";
-    extraConfig = {
+    settings = {
       init.defaultBranch = "main";
+      user.email = "remdinata@gmail.com";
+      user.name = "Mahendra Dinata";
     };
   };
 }

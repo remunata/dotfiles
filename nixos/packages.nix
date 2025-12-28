@@ -41,11 +41,12 @@
   # Font packages.
   fonts.packages = with pkgs; [
     noto-fonts
+    noto-fonts-cjk-sans
     nerd-fonts.jetbrains-mono
     nerd-fonts.fira-mono
     nerd-fonts.fira-code
     corefonts
-    vistafonts
+    vista-fonts
   ];
 
   # Enable flatpak.
