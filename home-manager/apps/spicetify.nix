@@ -27,7 +27,7 @@ in
       shuffle
       beautifulLyrics
     ];
-    theme = spicePkgs.themes.starryNight;
+    theme = spicePkgs.themes.text;
     enabledCustomApps = with spicePkgs.apps; [
       marketplace
       reddit
