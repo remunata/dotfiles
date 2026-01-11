@@ -13,6 +13,9 @@
   # Timezone.
   time.timeZone = "Asia/Jakarta";
 
+  # Tell NixOS to store time in local format
+  time.hardwareClockInLocalTime = true;
+
   # Locale.
   i18n.defaultLocale = "en_US.UTF-8";
 
