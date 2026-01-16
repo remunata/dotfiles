@@ -10,6 +10,7 @@
     xdg-desktop-portal-gtk
     xdg-desktop-portal-gnome
     gnome-keyring
+    xwayland-satellite
 
     adw-gtk3
     libsForQt5.qt5ct
