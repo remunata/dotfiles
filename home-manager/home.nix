@@ -4,19 +4,14 @@
 }:
 {
   imports = [
-    ./apps/btop
-    ./apps/caelestia.nix
-    ./apps/foot.nix
+    ./apps/dms.nix
     ./apps/git.nix
-    ./apps/hyprland
+    ./apps/niri
     ./apps/starship
     ./apps/sh.nix
     ./apps/spicetify.nix
-    ./apps/uwsm
     ./apps/vscodium.nix
     ./apps/wezterm.nix
-    ./apps/zen.nix
-    ./theme.nix
   ];
 
   # Home Manager needs a bit of information about you and the paths it should

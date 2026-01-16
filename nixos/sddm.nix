@@ -74,7 +74,6 @@ in
   # Dependencies.
   environment.systemPackages = [
     sddm-theme
-    sddm-theme.test
   ];
 
   # Ensures SDDM starts after the service.

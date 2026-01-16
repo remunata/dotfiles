@@ -1,9 +1,8 @@
 {
   imports = [
-    ./apps/caelestia.nix
     ./apps/gaming.nix
     ./apps/general.nix
-    ./apps/hyprland.nix
+    ./apps/niri.nix
     ./apps/sh.nix
     ./apps/thunar.nix
     ./boot-theme.nix
@@ -12,6 +11,7 @@
     ./sddm.nix
     ./system.nix
     ./user.nix
+
     ./hardware-configuration.nix
   ];
 
