@@ -20,6 +20,9 @@
       matches = [
         { app-id = "quickshell"; }
         { app-id = "pavucontrol"; }
+        { app-id = "FileRoller"; }
+        { app-id = "Nautilus"; }
+        { title = "Rename*"; }
       ];
       open-floating = true;
     }
